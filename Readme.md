@@ -11,7 +11,7 @@ PLC.
 
 ## Licence
 
-This program is under [Beerware Licence][1].
+This program is under [Beerware Licence](https://fr.wikipedia.org/wiki/Beerware).
 > As long as you retain this notice you can do whatever you want with this
 > stuff. If we meet some day, and you think this stuff is worth it, you can buy
 > me a beer in return.
@@ -50,6 +50,3 @@ optional arguments:
 I provide this program as a proof of concept. Since ModbusTCP is clearly
 depreciated, you should use another more secure protocol instead of using tools
 like this.
-
-
-[1](https://fr.wikipedia.org/wiki/Beerware)
