@@ -15,7 +15,7 @@ from parser import parse_address
 parser = ArgumentParser(description="Sniff ModbusTCP packets on network and raise alarms if intrusions are detected")
 parser.add_argument('-i', '--interface', type=str, default='eth0', help='Interface')
 parser.add_argument('-p', '--port', type=int, default=502, help='Port to listen to')
-parser.add_argument('-a', '--alert', type=str, help='Modbus server to raise alert <address>[:<port=502>]/<register>')
+parser.add_argument('-a', '--alert', type=str, help='Modbus server to raise alert <address>:[<port=502>]/<register>')
 parser.add_argument('authorized_hosts', nargs='*', help="list of authorized hosts")
 args = parser.parse_args()
 
