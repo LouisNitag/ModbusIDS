@@ -46,5 +46,8 @@ def callback(p):
 # Launch the sniffer with good options
 try:
     sniff(iface=args.interface, filter=f"tcp and port {args.port}", prn=callback)
+except PermissionError as e:
+    print("This tool require root privileges or cap_net_raw capability.")
+    exit(1)
 except KeyboardInterrupt:
     exit(0)
