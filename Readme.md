@@ -33,7 +33,7 @@ You may need root privileges to launch the utility.
 usage: sniffer.py [-h] [-i INTERFACE] [-p PORT] [-a ALERT]
                   [authorized_hosts [authorized_hosts ...]]
 
-Sniff packets from
+Sniff ModbusTCP packets on network and raise alarms if intrusions are detected
 
 positional arguments:
   authorized_hosts      list of authorized hosts
@@ -59,7 +59,7 @@ All these devices are linked throug a network hub, thus the computer has access
 to trames sent to both PLC and HMI. The sniffer is lauched this way:
 
 ```
-# ./sniffer -i eth0 -a 192.168.0.11:/42 192.168.0.10 192.168.0.11
+# ./sniffer -i eth1 -a 192.168.0.11:/42 192.168.0.10 192.168.0.11
 ```
 
 If the sniffer catch a illegitimate request from some host, it will write `1`
